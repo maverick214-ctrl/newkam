@@ -100,7 +100,7 @@ function App() {
       </section>
 
       {/* Education */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
+      <section id="education" className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 observe">
             <div className="flex items-center justify-center mb-4">
@@ -144,7 +144,7 @@ function App() {
       </section>
 
       {/* Projects */}
-      <section className="py-20 px-6">
+      <section id="projects" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 observe">
             <div className="flex items-center justify-center mb-4">
@@ -254,7 +254,7 @@ function App() {
       </section>
 
       {/* Skills */}
-      <section className="py-20 px-6">
+      <section id="skills" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 observe">
             <div className="flex items-center justify-center mb-4">
@@ -337,7 +337,7 @@ function App() {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
+      <section id="certifications" className="py-20 px-6 bg-gradient-to-br from-purple-50 to-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 observe">
             <div className="flex items-center justify-center mb-4">
@@ -396,32 +396,89 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 px-6 bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-20 w-40 h-40 bg-pink-300 rounded-full blur-3xl"></div>
+      <footer className="relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white overflow-hidden">
+        {/* Animated background */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500 rounded-full blur-3xl animate-blob"></div>
+          <div className="absolute top-20 right-20 w-64 h-64 bg-pink-500 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-10 left-1/2 w-64 h-64 bg-purple-400 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
         </div>
 
-        <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h3 className="text-3xl font-bold mb-6 tracking-wide">Khushboo Shukla</h3>
-          <div className="flex flex-wrap justify-center gap-6 text-sm mb-8">
-            <a href="mailto:khushbooshukla047@gmail.com" className="flex items-center gap-2 hover:text-purple-300 transition-all duration-300 hover:scale-105">
-              <Mail size={18} />
-              <span>khushbooshukla047@gmail.com</span>
-            </a>
-            <div className="flex items-center gap-2">
-              <MapPin size={18} />
-              <span>Ujjain (M.P.), 456001</span>
+        {/* Decorative top border */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500"></div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-6 py-16">
+          {/* Main Footer Content */}
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            {/* About Section */}
+            <div className="text-center md:text-left">
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
+                Khushboo Shukla
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                B.Tech Computer Science Engineering Student passionate about software development and emerging technologies.
+              </p>
+              <div className="flex justify-center md:justify-start gap-4">
+                <a href="mailto:khushbooshukla047@gmail.com" className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-purple-600 transition-all duration-300 hover:scale-110" aria-label="Email">
+                  <Mail size={18} />
+                </a>
+                <a href="https://www.linkedin.com/in/khushboo-shukla-96745b315/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-purple-600 transition-all duration-300 hover:scale-110" aria-label="LinkedIn">
+                  <Linkedin size={18} />
+                </a>
+              </div>
             </div>
-            <a href="https://www.linkedin.com/in/khushboo-shukla-96745b315/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-purple-300 transition-all duration-300 hover:scale-105">
-              <Linkedin size={18} />
-              <span>LinkedIn</span>
-            </a>
+
+            {/* Quick Links */}
+            <div className="text-center">
+              <h4 className="text-lg font-semibold mb-4 text-purple-300">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="#education" className="text-gray-300 hover:text-purple-300 transition-colors duration-300">Education</a>
+                </li>
+                <li>
+                  <a href="#projects" className="text-gray-300 hover:text-purple-300 transition-colors duration-300">Projects</a>
+                </li>
+                <li>
+                  <a href="#skills" className="text-gray-300 hover:text-purple-300 transition-colors duration-300">Skills</a>
+                </li>
+                <li>
+                  <a href="#certifications" className="text-gray-300 hover:text-purple-300 transition-colors duration-300">Certifications</a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div className="text-center md:text-right">
+              <h4 className="text-lg font-semibold mb-4 text-purple-300">Get in Touch</h4>
+              <div className="space-y-3 text-sm text-gray-300">
+                <a href="mailto:khushbooshukla047@gmail.com" className="flex items-center justify-center md:justify-end gap-2 hover:text-purple-300 transition-colors duration-300">
+                  <Mail size={16} />
+                  <span>khushbooshukla047@gmail.com</span>
+                </a>
+                <div className="flex items-center justify-center md:justify-end gap-2">
+                  <MapPin size={16} />
+                  <span>Ujjain (M.P.), 456001</span>
+                </div>
+                <a href="https://www.linkedin.com/in/khushboo-shukla-96745b315/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-end gap-2 hover:text-purple-300 transition-colors duration-300">
+                  <Linkedin size={16} />
+                  <span>LinkedIn Profile</span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="h-px w-32 bg-purple-400 mx-auto mb-6"></div>
-          <p className="text-purple-200 text-sm font-light">
-            © 2025 Khushboo Shukla. All rights reserved.
-          </p>
+
+          {/* Divider */}
+          <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent mb-8"></div>
+
+          {/* Bottom Bar */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+            <p className="text-center md:text-left">
+              © 2025 Khushboo Shukla. All rights reserved.
+            </p>
+            <p className="text-center md:text-right flex items-center gap-2">
+              Designed with <span className="text-pink-400 animate-pulse">♥</span> using React & Tailwind CSS
+            </p>
+          </div>
         </div>
       </footer>
     </div>

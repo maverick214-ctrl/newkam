@@ -24,6 +24,7 @@ A modern, elegant, and responsive personal portfolio website built with React, T
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Beautiful icon library
+- **Inter & Playfair Display** - Premium Google Fonts for elegant typography
 
 ## Getting Started
 
