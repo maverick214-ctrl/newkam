@@ -1,21 +1,27 @@
 # Khushboo Shukla - Portfolio Website
 
-A modern, elegant, and responsive personal portfolio website built with React, TypeScript, and Tailwind CSS.
+A stunning, modern portfolio website featuring unique design aesthetics, interactive animations, and professional presentation.
 
 ## Features
 
-- **Modern Design**: Clean, professional layout with purple accent colors and smooth animations
+- **Unique Modern Design**: Contemporary layout with violet/purple gradients and sophisticated visual hierarchy
+- **Interactive Elements**:
+  - Cursor-following gradient effect
+  - Animated background grid and gradient orbs
+  - Smooth scroll-triggered animations
+  - Hover effects with scale and color transitions
+- **Glass Morphism**: Frosted glass effects on key UI elements
 - **Fully Responsive**: Optimized for all devices from mobile to desktop
-- **Smooth Animations**: Scroll-triggered fade-in effects and hover animations
 - **Professional Sections**:
-  - Hero section with contact information
-  - Professional summary
-  - Education timeline
-  - Project showcase with tech stack badges
-  - Internship experience
-  - Skills & tools organized by category
+  - Full-screen hero with animated badge and CTA buttons
+  - About section with gradient icon box
+  - Education timeline with gradient cards
+  - Featured projects with unique icons
+  - Experience showcase
+  - Skills & expertise grid
   - Certifications
-  - Extracurricular activities
+  - Community involvement
+  - Modern footer with quick links and social icons
 
 ## Tech Stack
 
@@ -24,7 +30,7 @@ A modern, elegant, and responsive personal portfolio website built with React, T
 - **Vite** - Fast build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Beautiful icon library
-- **Inter & Playfair Display** - Premium Google Fonts for elegant typography
+- **Space Grotesk & Sora** - Premium Google Fonts for modern typography
 
 ## Getting Started
 
